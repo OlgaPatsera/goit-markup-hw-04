@@ -31,6 +31,8 @@
   --btn-text-hover: #ffffff;
   --btn-bg-cl: #f5f4fa;
   --btn-txt-cl: #212121;
+  --btn-shadow-hv: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   /*Teams link*/
   --teams-bg: #ffffff;
   --teams-link-title: #212121;
@@ -39,6 +41,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   /*Other*/
   --portfolio-cards-border: 1px solid #eeeeee;
+  --portfolio-shadow-hv: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   --header-border: 1px solid #ececec;
   --feature-icon-bg: #f5f4fa;
   --clients-icon-cl: #afb1b8;
@@ -543,6 +547,8 @@ nav {
 .btn:focus {
   background-color: var(--btn-bg-hover);
   color: var(--btn-text-hover);
+  box-shadow: var(--btn-shadow-hv);
+  border: var(--btn-bg-hover);
 }
 .portfolio-list {
   display: flex;
@@ -567,6 +573,10 @@ nav {
 }
 .portfolio-item {
   width: 370px;
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: var(--portfolio-shadow-hv);
 }
 .portfolio-group {
   padding: 20px 24px 19px 24px;
