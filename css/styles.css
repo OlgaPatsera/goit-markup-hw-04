@@ -583,3 +583,7 @@ nav {
   border-right: var(--portfolio-cards-border);
   border-bottom: var(--portfolio-cards-border);
 }
+.portfolio-link {
+  text-decoration: none;
+  color: inherit;
+}
