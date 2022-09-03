@@ -270,10 +270,10 @@ nav {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .public-group {
   margin-left: 70px;
-  margin-top: 12px;
 }
 /*HERO*/
 .hero {
