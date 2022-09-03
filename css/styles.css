@@ -277,7 +277,6 @@ nav {
 }
 /*HERO*/
 .hero {
-  display: flex;
   background-color: var(--dark-bg-cl);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -291,6 +290,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -367,7 +367,6 @@ nav {
 
 .feature-group {
   display: flex;
-  width: 100%;
   height: 120px;
   background-color: var(--feature-icon-bg);
   border-radius: 4px;
@@ -489,13 +488,13 @@ nav {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  gap: 30px;
 }
 
 .clients-link {
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -506,8 +505,8 @@ nav {
   height: 60px;
   fill: currentColor;
 }
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+.clients-item {
+  flex-basis: calc((100%-150px) / 6);
 }
 .clients-link:hover,
 .clients-link:focus {
