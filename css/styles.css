@@ -573,10 +573,7 @@ nav {
 .portfolio-item {
   width: 370px;
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: var(--portfolio-shadow-hv);
-}
+
 .portfolio-group {
   padding: 20px 24px 19px 24px;
   border-left: var(--portfolio-cards-border);
@@ -584,6 +581,11 @@ nav {
   border-bottom: var(--portfolio-cards-border);
 }
 .portfolio-link {
+  display: block;
   text-decoration: none;
   color: inherit;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: var(--portfolio-shadow-hv);
 }
